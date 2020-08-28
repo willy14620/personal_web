@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+    transition: .5s;
+}
+
+a:hover {
+    color: rgb(253, 110, 67);
+}
+
+#my-img {
+    width: 30px;
+    border-radius: 2mm;
+    margin-bottom: -15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#navbar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 5px;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+}
+
+/* float */
+/*
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 5px;
+    overflow: hidden;
+    background-color: #dddddd;
+}
+
+#navbar > li {
+    display: inline;
+}
+*/ 
+
+#navbar > li > a{
+    display: block;
+    border-radius: 2mm;
+    padding: 8px;
+    margin: 0 10px;
+    text-decoration-line: none;
+    color: white;
+    transition: .5s;
+}
+
+#navbar > li > a.active {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#navbar > li > a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#jumbotron {
+    background: url(../image/Welcome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 500px;
+}
+
+.grid-box {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "sidebar content content content";
+}
+
+#sidebar {
+    grid-area: sidebar;
+    margin: 20px 50px;
+}
+
+#sidebar-content {
+    grid-area: content;
+    margin: 20px 50px;
+}
+
+#sidebar-nav {
+    display: flex;
+    list-style-type: none;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.sidebar-item {
+    margin: 10px 0;
+    padding: 20px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 1mm;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    transition: .5s;
+}
+
+.sidebar-item.active {
+    color: rgb(51, 51, 51);
+    background-color: white;
+}
+
+.sidebar-item:hover:not(.active) {
+    color: rgb(51, 51, 51);
+    background-color: white;
+}
+
+#cat-img {
+    width: 20vh;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:1024px){
+    #index-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+}
+
+#index-content > div {
+    border: 1px solid black;
+    border-radius: 2mm;
+    width: auto;
+    padding: 0 10px;
+    margin: 20px;
+}
+
+#footer {
+    border-top: 1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+#footer > div {
+    margin: 5px 0;
+}

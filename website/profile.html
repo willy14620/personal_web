@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Profile</title>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- navbar -->
+        <ul id="navbar">
+            <li><img id="my-img" src="../static/image/Mu.png"></li>
+            <li><a href="./index.html"><i class="fas fa-home"></i>&nbsp;Index</a></li>
+            <li><a class="active" href="./profile.html"><i class="fas fa-address-card"></i>&nbsp;Profile</a></li>
+            <li><a href="./contact.html"><i class="fas fa-comment"></i>&nbsp;Contact</a></li>
+            <li><a id="current-time"></a></li>
+        </ul>
+        <!-- Welcome -->
+        <div id="jumbotron"></div>
+        <!-- Content -->
+        <main class="grid-box">
+            <div id="sidebar">
+                <ul id="sidebar-nav">
+                    <li><button id="btn-1" class="sidebar-item" style="background-color: white; color: rgb(51, 51, 51);">Website outline</button></li>
+                    <li><button id="btn-2" class="sidebar-item">About me</button></li>
+                    <li><button id="btn-3" class="sidebar-item">My experience</button></li>
+                </ul>
+            </div>
+            <div id="sidebar-content">
+                <div id="page-1" style="display: block;">
+                    <h1>Website outline</h1><hr>
+                    <p>The website is used to store some applications or front-end/back-end website projects that I made.</p>
+                    <p>You also can visit my github to search for those applications I made.</p>
+                    <p>Thank for watching.</p></div>
+                <div id="page-2" style="display: none;">
+                    <h1>About me</h1><hr>
+                    <img id="cat-img" src="../static/image/Xin_Cat.jpg">
+                    <p>I am a junior in Taiwan.</p>
+                    <p>I think writting program is fun.</p>
+                    <p>So, I will make some useful applications by myself. Then, put it on my github for everyone to share.</p>
+                </div>
+                <div id="page-3" style="display: none;">
+                    <h1>My experience</h1><hr>
+                    <p>Education:&nbsp;Current studying at university.</p>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer id="footer">
+            <div id="copyright">Copyright © 2020</div>
+            <div id="author"><a href="https://github.com/willy14620">Author:&nbsp;willy14620</a></div>
+            <div id="date">Last Modified: 2020/08/28</div>
+        </footer>
+        <!-- Javascript -->
+        <script src="../static/js/profile_btn.js"></script>
+        <script src="../static/js/time.js"></script>
+    </body>
+</html>

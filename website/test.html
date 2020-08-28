@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>123</title>
+        <style>
+            .grid-box {
+                display: grid; 
+                grid-template-columns: repeat(4, 1fr); /*網格區塊的寬度大小*/
+                grid-column-gap: 10px; /*網格區塊的左右間距*/
+                grid-row-gap: 10px; /*網格區塊的上下間距*/
+                grid-template-areas:
+                "content content content sidebar"; /*網格區塊名稱*/
+            }
+
+            #sidebar_content{
+                grid-area: content; /*指定網格區塊名稱*/
+                background:#ccaaff;
+            }
+
+            #sidebar{
+                grid-area: sidebar;
+                background:#cceeaa;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <main id="index_content" class="grid-box">
+            <div id="sidebar">1</div>
+            <div id="sidebar_content">2</div>
+        </main>
+    </body>
+</html>
