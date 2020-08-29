@@ -75,7 +75,7 @@ a:hover {
 }
 
 .grid-box {
-    height: 70vh;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "sidebar content content content";
