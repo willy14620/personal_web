@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css2?family=Asap&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gaegu&family=Londrina+Solid:wght@100&display=swap);
+
+
+/* GLOBAL ATTR */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gaegu', sans-serif;
+}
+
+a {
+    color: #323232;
+    text-decoration-line: none;
+    transition: .5s;
+}
+
+a:hover {
+    color: #5ec0cf;
+}
+
+/* DARKMODE */
+
+.dark-mode, .dark-mode * {
+    background-color: #323232 !important;
+    color: #ffffff !important;
+}
+
+/* .dark-mode:hover, .dark-mode *:hover {
+    background-color: #5ec0cf !important;
+} */
+
+/* HEADER */
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 5px 0;
+    border-bottom: 2px solid #9e9e9e;
+}
+
+.icon {
+    height: 6vh;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+}
+
+.menu-box {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-box-item {
+    margin: 0 10px;
+    font-size: 3vh;
+}
+
+.menu-box-item:first-child {
+    margin-left: -20px;
+}
+
+.menu-box-item > a {
+    border-radius: 2mm;
+    padding: 5px;
+    color: #5ec0cf;
+}
+
+.menu-box-item > a:hover {
+    background-color: #5ec0cf;
+    color: #fff;
+}
+
+body.dark-mode .menu-box-item > a:hover{
+    color: #5ec0cf !important;
+}
+
+.toggle-btn {
+    margin-left: auto;
+    margin-right: 20px;
+    color: #5ec0cf;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 2mm;
+    padding: 5px;
+    display: none;
+}
+
+.toggle-btn:hover {
+    background-color: #5ec0cf;
+    color: #fff;
+}
+
+/* WELCOME IMAGE */
+
+#welcome-img {
+    background-image: url(../img/bg-1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 70vh;
+    /* filter: blur(1.5px); */
+    border-bottom: 2px solid #9e9e9e;
+}
+
+#welcome-text {
+    cursor: default;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 20vh;
+    text-shadow: 3px -3px 5px #5ec0cf, -1px 0 0 #5ec0cf;
+    color: #cedde0;    
+    font-family: 'Gaegu', cursive;
+    background-color: transparent !important;
+}
+
+/* CONTENT */
+
+#index-content {
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.content {
+
+}
+
+.article {
+    margin-top: 30px;
+    border: 1px solid #5ec0cf;
+    border-radius: 2mm;
+    box-shadow: 2px 0 10px #5ec0cf;
+    padding: 20px;
+}
+
+.article-content {
+    /* display: none; */
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 50px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item {
+    margin: 0 20px;
+}
+
+/* GO TO TOP */
+
+#go-to-top {
+    cursor: pointer;
+    position: fixed;
+    right: 2.5%;
+    bottom: 5%;
+    font-size: 30px;
+    display: none;
+}
